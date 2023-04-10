@@ -1,0 +1,106 @@
+/*nosotros*/
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    .nosotros {
+        @include titulo
+    }
+
+    .imgtienda {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .imgtienda img {
+        width: 550px;
+        height: 500px;
+        margin-left: 40px;
+    }
+
+    .imgtienda h2 {
+        color: #34C990;
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+        font-family: 'PT Sans Narrow', sans-serif;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+}
+
+.redes {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+        a {
+        color: #E734BF;
+        text-decoration: none;
+        font-size: 40px;
+        font-family: 'PT Sans Narrow', sans-serif;
+        }
+}
+
+@media screen and (max-width: 1300px) {
+    .contenedor-nosotros {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        div .nosotros {
+            color: #3555BD;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            text-align: center;
+            margin: 40px 30px 20px 30px;
+        }
+
+        .imgtienda {
+            position: relative;
+            padding: 0;
+        }
+
+        .imgtienda img {
+            display: block;
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            margin: 0;
+        }
+
+        .imgtienda h2 {
+            position: absolute;
+            top: 150px;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            margin: 0px;
+            font-size: 25px;
+            background-color: rgba(0, 0, 0, 0.5);
+            font-family: 'PT Sans Narrow', sans-serif;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        .contenedor-nosotros div .nosotros {
+            text-align: start;
+        }
+    
+        .contenedor-nosotros .imgtienda img {
+            height: 500px;
+        }
+    
+        .contenedor-nosotros .imgtienda h2 {
+            font-size: 20px;
+            top: 0px;
+            text-align: start;
+        }
+    }
+}
+/*fin nosotros*/

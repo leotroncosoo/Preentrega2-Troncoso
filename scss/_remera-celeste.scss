@@ -1,0 +1,63 @@
+.contendor-remera{
+    display: flex;
+    gap: 300px;
+    padding-top: 40px;
+    justify-content: center;
+
+    .info-remera .producto-ropa-isl img {
+            height: 700px;
+            border: solid 3px rgba(221, 56, 56, 0.555);
+            border-radius: 6px;
+        }
+    .info-remera div h2 {
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    .info-disponible{
+        div h2{
+            font-size: 50px;
+        }
+        div h3{
+            font-size: 30px;
+        }
+        div div input {
+            padding: 5px;
+            margin: 5px;
+            border: none;
+            border-radius: 2px;
+            background-color: rgba(187, 7, 61, 0.411);
+            color: white;
+
+        }
+        div h4 {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 30px;
+        }
+        div p{
+            font-size: 20px;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            background-color: rgba(233, 47, 14, 0.432);
+            border-radius: 3px;
+            color: white;
+        }
+    }
+}
+h2{
+    text-align: center;
+    padding-top: 50px;
+}
+@media screen and (max-width: 1000px){
+    .contendor-remera{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        margin: 0;
+        gap: 0px;
+        text-align: center;
+    }
+}

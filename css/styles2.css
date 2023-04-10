@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Farsan', cursive;
+}
+
+main {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.50) 47%, rgba(0, 0, 0, 0.50) 100%);
+    background-blend-mode: screen;
+}
+
+/*inicio*/
+.portada {
+    position: relative;
+}
+
+.portada img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.portada h2 {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*fin incio*/
+
+/*tienda*/
+
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.filtrar {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin: 30px 30px;
+}
+
+.filtros h3 {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    margin: 30px 10px 10px 30px;
+}
+
+.filtros label {
+    display: flex;
+    font-size: 13px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 20px 50px 20px 50px;
+}
+
+.filtros button {
+    color: black;
+    padding: 6px;
+    background-color: #7d1eca8a;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+/*fin tienda*/
+
+/*nosotros*/
+
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-nosotros div .nosotros {
+    color: #3555BD;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 30px 20px 30px;
+}
+
+.contenedor-nosotros .imgtienda {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenedor-nosotros .imgtienda img {
+    width: 550px;
+    height: 500px;
+    margin-left: 40px;
+}
+
+.contenedor-nosotros .imgtienda h2 {
+    color: #34C990;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+
+}
+
+.redes {
+    display: flex;
+}
+
+.redes a {
+    margin: 20px;
+    color: #E734BF;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    transition: transform 0.3s;
+}
+
+.redes a:hover {
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+/*fin nosotros*/
+/*envios*/
+.contenedor-envios {
+    display: flex;
+    justify-content: center;
+}
+
+.envios {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #2CD451;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.envios-pais {
+    padding: 20px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.envios-pais img {
+    margin: 40px 30px 40px 50px;
+    height: 500px;
+    width: 650px;
+}
+
+.envios-pais h2 {
+    color: #E734BF;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: 80px 40px 40px 40px;
+}
+
+.envio-contacto {
+    text-decoration: none;
+    color: rgba(67, 67, 201, 0.747);
+}
+
+/*fin envios*/
+/*contacto*/
+.titulo {
+    text-align: center;
+    color: #2CD451;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+.envianos {
+    text-align: center;
+    margin: 40px;
+    color: #2F63BD;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.formularios {
+    width: 700px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #532b636e;
+    font-family: 'PT Sans Narrow', sans-serif;
+    grid-template-areas: "nombre           email"
+        "comentario    comentario"
+        "boton             boton ";
+}
+
+.formularios label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.formularioslabel input {
+    border: none;
+    padding: 10px;
+}
+
+.formularios .nombre {
+    grid-area: nombre;
+    font-size: 20px;
+}
+
+.formularios .email {
+    grid-area: email;
+    font-size: 20px;
+}
+
+.formularios .comentario {
+    grid-area: comentario;
+    font-size: 20px;
+}
+
+.boton {
+    grid-area: boton;
+    width: 80px;
+    height: 40px;
+    background-color: #5bb4ad62;
+    border-radius: 20px;
+}
+
+.seguirr {
+    padding: 40px;
+    text-align: center;
+    color: #2F63BD;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.seguirr h2 {
+    margin: 0px;
+    padding: 20px;
+}
+
+.redes {
+    text-decoration: none;
+    color: #2CD451;
+    font-size: 30px;
+    justify-content: center;
+
+}
+
+/*fin contactos*/
+
+@media screen and (max-width: 1300px) {
+
+    /*nosotros*/
+    .contenedor-nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-nosotros div .nosotros {
+        color: #3555BD;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin: 40px 30px 20px 30px;
+    }
+
+    .contenedor-nosotros .imgtienda {
+        position: relative;
+    }
+
+    .contenedor-nosotros .imgtienda img {
+        display: block;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .contenedor-nosotros .imgtienda h2 {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        color: white;
+        margin: 0px;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    /*fin nosotros*/
+    /*envios*/
+    .contenedor-envios {
+        display: flex;
+    }
+
+    .envios {
+        text-align: center;
+        color: #2CD451;
+        font-size: 40px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .envios-pais {
+        padding: 0;
+        position: relative;
+    }
+
+    .envios-pais img {
+        display: block;
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .envios-pais h2 {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        color: white;
+        margin: 0px;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+
+    /*fin envios*/
+}
+
+@media screen and (max-width: 750px) {
+
+    /*contacto*/
+    .formularios {
+        width: auto;
+        margin: 40px 0px;
+        border-radius: none;
+        padding: 20px;
+        grid-template-columns: 1fr 1fr;
+        font-family: 'PT Sans Narrow', sans-serif;
+        grid-template-areas: "nombre           nombre"
+            "email             email"
+            "comentario       comentario"
+            "boton               boton  ";
+    }
+
+    /*fin contactos*/
+    .seguirr {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /*nosotros*/
+    .contenedor-nosotros div .nosotros {
+        text-align: start;
+    }
+
+    .contenedor-nosotros .imgtienda img {
+        height: 500px;
+    }
+
+    .contenedor-nosotros .imgtienda h2 {
+        font-size: 20px;
+        top: 0px;
+        text-align: start;
+    }
+
+    /* fin nosotros*/
+
+    /*envios*/
+    .envios-pais h2 {
+        font-size: 20px;
+        top: 75px;
+        text-align: start;
+    }
+}
